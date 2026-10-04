@@ -1,0 +1,187 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<!---------------------------------------------------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Teko:wght@300&display=swap" rel="stylesheet">
+<!---------------------------------------------------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<!---------------------------------------------------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<!---------------------------------------------------------------------------------------------------------------->
+</head>
+   <body>
+        <div id = "header">
+			<img class = "logo" src = "image/logo.jpg" height = 100px>
+			<div id = "barra">
+				<img class = "lente" src = "image/lente.png">
+				<input type = "text" placeholder = "Inserisci la tua ricerca..." class = "barraricerca">
+			</div>
+			<h1 class = "titolo"> Perego Motors </h1>
+		</div>
+		<div id = "menu" class = "flex-container">
+			<a href="pagina camion.html"><button class = "btt1" class = "flex-item"> Camion </button></a>
+			<a href="pagina trattori.html"><button class = "btt1" class = "flex-item"> Trattori </button></a>
+			<a href="pagina pullman.html"><button class = "btt1" class = "flex-item"> Pullman </button></a>
+			<a href="pagina ruspe.html"><button class = "btt1" class = "flex-item"> Ruspe </button></a>
+			<a href="pagina autobus.html"><button class = "btt1" class = "flex-item"> Autobus </button></a>
+			<div class="dropdown">
+                <button class = "btt1" class = "flex-item"> Altre categorie </button>
+                    <div class="dropdown-content">
+                        <a href="pagina furgoni.html"><buttom class = "btt2">Furgoni</buttom></a>
+						<a href="pagina movimentazioni.html"><buttom class = "btt2">Movimentazioni</buttom></a>
+                        <a href="pagina rimorchi.html"><buttom class = "btt2">Rimorchi</buttom></a>
+                    </div>
+            </div>
+			<a href="form.html"><button class = "btt1">Accedi/Registrati</button></a>
+		</div>
+        <div>
+			<img src="image/volvo1.jpg" class="slide" alt="">
+        	<img src="image/daf2.jpg" class="slide" alt="">
+        	<img src="image/greenVolvoVt880(3).jpg" class="slide" alt="">
+			<img src="image/camion4.jpg" class="slide" alt="">
+
+        	<button class="slide-btn-back" onclick="slidesub()"><</button>
+        	<button class="slide-btn-forward" onclick="slideadd()">></button>
+
+        		<script>
+            		x = 0;
+            		slides = document.getElementsByClassName("slide");
+            		slides[x].style.display = "block";
+
+            		function slideadd()
+            		{
+            		    slides[x].style.display = "none";
+           	 		    x+=1;
+            		    x%=4;
+            		    slides[x].style.display = "block";
+           	 		}
+					
+            		function slidesub()
+            		{
+            		    slides[x].style.display = "none";
+            		    x -= ((x < 1) ? -2 : 1);
+            		    x%=4;
+            		    slides[x].style.display = "block";
+            		}
+        		</script>
+				<div class = "flex-container">
+					<h1 class = "titoli">I nostri prodotti di punta</h1>
+					<hr></hr>
+					<a href="pagina camion.html"><button class = "bottoni" class = "flex-item" style="background-image: url(image/actros-f.jpg)"></button></a>
+					<a href="pagina camion.html"><button class = "bottoni" class = "flex-item" style="background-image: url(image/actros-L.jpg)"></button></a>
+					<a href="pagina camion.html"><button class = "bottoni" class = "flex-item" style="background-image: url(image/actros.jpg)"></button></a>
+					<a href="pagina camion.html"><button class = "bottoni" class = "flex-item" style="background-image: url(image/iveco-elettrico.jpg)"></button></a>
+				</div>
+				<div>
+					<h1 class = "titoli"> Top brand dei nostri mezzi </h1>
+					<hr></hr>
+					<center>
+					<ul class = "flex-container">
+						<li class = "li">
+							<a href="pagina mercedes.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/mercedes-logo.png"></button></a>
+						</li>
+						<li class = "li">
+							<a href="pagina renault.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/renault-logo.png"></button></a>
+						</li>
+						<li class = "li">
+							<a href="pagina iveco.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/iveco-logo.png"></button></a>
+						</li>
+						<li class = "li">
+							<a href="pagina scania.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/scania-logo.png"></button></a>
+						</li>
+					</ul>
+					</center>
+				</div>
+				<div>
+					<center>
+					<ul class = "flex-container">
+						<li class = "li">
+							<a href="pagina fiat.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/fiat-logo.png"></button></a>
+						</li>
+						<li class = "li">
+							<a href="pagina nissan.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/nissan-logo.png"></button></a>
+						</li>
+						<li class = "li">
+							<a href="pagina volvo.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/volvo-logo.png"></button></a>
+						</li>
+						<li class = "li">
+							<a href="pagina daf.html"><button class = "brand" class = "flex-item"><img class = "img-brand" src="image/daf-logo.png"></button></a>
+						</li>
+					</ul>
+					</center>
+					<hr></hr>
+				</div>
+		</div>
+		<div id ="div1">
+			<div class = "ibridi" class = "flex-container">
+				<h1 class = "titoli2" class = "flex-item">Ci ampliamo verso il futuro</h1>
+				<h4 class = "scritte" class = "flex-item">Per noi è molto importante l'ambiente, 
+					infatti nella nostra selezione di mezzi pesanti non mancano le vetture ibride ed elettriche, 
+					le troverai contrassegnate da un pallino verde<img class = "eco" src = "image/bollino verde.png">
+					mentre stai cercando il tuo prossimo mezzo.
+					<!--Se vedete un bollino verde affianco al nome del mezzo vuol dire che è eco, gia...Eco! 
+					Non ammazza più emettendo CO2, ora ammazza con l'acido delle batterie, che gran figata!-->
+				</h4>
+			</div>
+		</div>
+		<hr></hr>
+		<div id ="div2">
+			<div class = "esposizione" class = "flex-container">
+				<h1 class = "titoli2" class = "flex-item">Lo stile della strada</h1>
+				<h4 class = "scritte" class = "flex-item">Sei stanco dei comuni camion 
+					e vuoi qualcosa di personalizzato, di accattivante o divertente?
+					Allora questa sezione fa proprio al caso tuo, 
+					scegli pure un camion che ti aiuti a domare a pieno la strada.
+				</h4>
+				<a href="pagina custom.html"><button class = "btt-custom">Custom</button></a>
+			</div>
+		</div>
+		<!------------------------------------------------------->
+		<div class="container">
+			<footer class="foot">
+			<!-- Footer main -->
+			<section class="ft-main">
+				<div class="ft-main-item">
+				<h2 class="ft-title">About</h2>
+				<ul>
+					<li class = "ft-scritte"><a href="#">Services</a></li>
+					<li class = "ft-scritte"><a href="#">Wallet</a></li>
+					<li class = "ft-scritte"><a href="#">Prices</a></li>
+					<li class = "ft-scritte"><a href="#">Customers</a></li>
+					<li class = "ft-scritte"><a href="#">Careers</a></li>
+				</ul>
+				</div>
+				<div class="ft-main-item">
+				<h2 class="ft-title">Resources</h2>
+				<ul>
+					<li class = "ft-scritte"><a href="#">Docs</a></li>
+					<li class = "ft-scritte"><a href="#">Blog</a></li>
+					<li class = "ft-scritte"><a href="#">Webinars</a></li>
+				</ul>
+				</div>
+				<div class="ft-main-item">
+				<h2 class="ft-title">Contact</h2>
+				<ul>
+					<li class = "ft-scritte"><a href="#">Help</a></li>
+					<li class = "ft-scritte"><a href="#">Sales</a></li>
+					<li class = "ft-scritte"><a href="#">Advertise</a></li>
+				</ul>
+				</div>
+			</section>
+			<!-- Footer legal -->
+			<section class="ft-legal">
+				<ul class="ft-legal-list">
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</section>
+			</footer>
+		</div>
+	</body>
+</html>
